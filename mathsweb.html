@@ -1,0 +1,474 @@
+<html>
+<head>
+    <title>MATHLAND</title>
+	 <link rel="icon" type="C:\deeksha\mathametian\logo.png" href="C:\deeksha\mathametian\logo.png">
+<style>
+    body{ margin: 0; font-family: Lato; background: #fff}
+p{color: #ccc; text-align: center;}
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,500;1,600&family=Source+Sans+Pro:wght@200;400;600;700&family=Tiro+Gurmukhi:ital@0;1&family=Tiro+Kannada:ital@1&display=swap');
+.navbar-wrapper{
+  width: 100%;
+  background: #1d1e22;
+  position: absolute;
+  min-height: 70px;
+}
+.navbar-menu-list{
+  width: 100%;
+  display: table;
+  margin: 0;
+  padding: 0;
+}
+.navbar-menu-list > li{
+  float: right;
+  padding: 25px 20px;
+  display: unset;
+  color: white;
+  cursor: pointer;
+  position: relative;
+}
+.navbar-menu-list > li:nth-child(3) span:after{
+  content: '';
+  display: inline-block;
+  margin-left: .2em;
+  vertical-align: .175em;
+  border-top: .3em solid;
+  border-right: .3em solid transparent;
+  border-bottom: 0;
+  border-left: .3em solid transparent;
+}
+.navbar-menu-list > li:nth-child(3):hover .sub-menu{ display: block;}
+.navbar-menu-list > li:first-child{ padding-right: 50px; }
+.sub-menu{
+  position: absolute;
+  background: #fff;
+  border: 1px solid gray;
+  color: #1d1e22;
+  border-radius: 5px;
+  top: calc(100% - 15px);
+  padding: 0;
+  display: none;
+}
+.sub-menu > li{
+  display: block;
+  padding: 20px 50px; 
+  width: max-content;
+}
+.sub-menu > li:hover{ background: #ccc; }
+.sub-menu > li:active{ background: blue; color: #fff; }
+.mobile-menu-open{
+  width: 30px;
+  padding: 5px 13px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+/* Mobile Version */
+@media only screen and (max-width: 300px) {
+  .hidden{ display: none !important; }
+  .shown{ display: block !important; }
+  .mobile-menu-open{
+    display: block;
+  }
+  .navbar-menu-list{ padding-top: 70px; display: none; }
+  .navbar-menu-list > li{
+    float: unset;
+    width: 95%;
+    display: block;
+    padding: 20px 10px;
+  }
+  .navbar-menu-list > li:last-child{ padding-bottom: 30px; }
+  .navbar-menu-list > li:nth-child(3):hover .sub-menu{ display: none; }
+  .sub-menu{
+    position: initial;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .sub-menu > li{
+    display: block;
+    padding: 20px 0px 20px 20px;
+    width: calc(100% - 20px);
+  }
+*{
+margin:0px;
+padding:0px;
+}
+ }
+          .container{
+            margin: auto;
+            max-width:1200px;
+            padding: 0 20px;
+            justify-content:space-between;
+          }
+          .img{
+           background-image: url("https://artofsmart.com.au/wp-content/uploads/2018/06/sales-skills-in-new-sales-era-1.jpg");
+           background-size:cover;
+           background-repeat:no-repeat;
+           padding: 40px 0 100px;
+           background-attachment: fixed;
+          }
+          .header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+          }
+          
+          
+          
+          .title1{
+            color:#ff8001;
+            font-family:'Quicksand',sans-serif;
+            letter-spacing:2px;
+            font-size:14px;
+          
+          
+          }
+          .title2{
+            color:white;
+            font-family:'Quicksand',sans-serif;
+            font-size:40px;
+            font-weight:bold;
+          }
+          .introduce{
+           color:#ffffffb3;
+           font-family:'Quicksand',sans-serif;
+           line-height: 1.5;
+           font-size:17px;
+          
+          }
+          .jotform-icon{
+            background-image:url("https://files.startupranking.com/startup/thumb/37832_dd0dcdb7463391d8ee4a9b7468e9f5aa930e359e_jotform_m.png");
+            background-repeat:no-repeat;
+            background-size:cover;
+            width:50px;
+            height:50px;
+            border-radius:50%;
+            margin-bottom:70px;
+          }
+          .button{
+            padding:12px 17px;
+            border-radius:5px;
+            border:0;
+            font-family:'Quicksand',sans-serif;
+            font-weight:bold;
+            background-color:white;
+            font-size:100%;
+            letter-spacing:0.5px;
+            margin-top:5px;
+          }
+          .title3{
+            font-family:'Quicksand',sans-serif;
+            font-size:40px;
+            text-align:center;
+            margin-top:90px;
+          }
+          .icon1-img{
+             background-repeat:no-repeat;
+            background-size:cover;
+            width:120px;
+            height:120px;
+          }
+          
+          .icon-description{
+          display: block;
+          text-align:center;
+          font-family:'Quicksand',sans-serif;
+          color:#000000b3;
+          font-weight:500;
+          font-size:15px;
+          }
+          
+          .icon-list{
+            display:flex;
+            flex-wrap:wrap;
+          }
+          .three-icon{
+            flex:1;
+            padding:30px;
+          }
+          .icon-title{
+            font-family:'Quicksand',sans-serif;
+          }
+          .page2{
+            text-align:center;
+          }
+          .page3{
+           background-color:#fbfbfb;
+          
+          }
+          .page3-box{
+            display:flex;
+            flex-wrap:wrap;
+            align-items:center;
+            padding: 20px 0;
+          }
+          .page3-img{
+           max-width:540px;
+          width:100%;
+            
+          }
+          .information{
+          flex:1;
+            padding-left:70px;
+          }
+          button.learn-more{
+            background-color:#292b2c;
+            color:white;
+          }
+          .info-title{
+            font-family:'Quicksand',sans-serif;
+            font-size:30px;
+            font-weight:bold;
+          
+          }
+          .info-all{
+            color:#000000b3;
+            margin-bottom:20px;
+            line-height:1.4;
+            font-size:17px;
+          
+          }
+          .get-free{
+             background-color:#292b2c;
+            color:white;
+          }
+          .memberships{
+            display:flex;
+            flex-wrap:wrap;
+          }
+          .member{
+          flex:auto;
+          padding:60px;
+          text-align:center;  
+          font-family:'Quicksand',sans-serif;
+          border-radius:4px;
+          }
+          
+          .mem-title{
+            font-size:26px;
+            font-weight:bold;
+          }
+          .orange{
+            background-color:#ff8001;
+            color:white;
+          }
+          .page4{
+            padding:80px 0;
+          }
+          .under{
+            background-color:#f5f5f5;
+            padding:10px;
+            display:flex;
+          
+          
+          }
+           .under .container{
+             display:flex;
+             flex-wrap:wrap;
+             justify-content:space-between;
+             width:100%;
+            }
+           
+          .copy{
+           font-family: 'Work Sans', sans-serif;
+          
+          
+          }
+          .facebook{
+            background-image:url("https://i.ibb.co/x6n6DNV/facebook-logo-button.png");
+            background-repeat:no-repeat;
+            background-size:cover;
+            width:30px;
+            height:30px;
+          
+          }
+          .sos-med{
+            display:flex;
+            justify-content:space-between;
+            width:100px;
+          }
+          
+          
+          .twitter{
+             background-image:url("https://i.ibb.co/wzstzsd/twitter.png");
+             background-repeat:no-repeat;
+            background-size:cover;
+            width:30px;
+            height:30px;
+          }
+          .linkedin{
+            background-image:url("https://i.ibb.co/9T8kqqb/linkedin-logo-button.png");
+            background-repeat:no-repeat;
+            background-size:cover;
+            width:30px;
+            height:30px;
+          }
+          
+          @media (max-width: 840px) {
+            .information {
+              padding-left: 0;
+              text-align: center;
+            }
+            .page3-box {
+              justify-content: center;
+            }
+
+</style>
+</head>
+<body>
+    <div class="navbar-wrapper">
+        <span class="mobile-menu-open" id="menu-open" onclick="openMenu()">
+       <hr /><hr /><hr />
+     </span>
+     <ul class="navbar-menu-list" id="menu-list">
+       <li><a HREF="C:\deeksha\conus.html" style="color:white;"><span>CONTACT  US</A></span></li>
+       <li><span><A href="C:\deeksha\facts.html" style="color:white;">FACTS</a></span></li>
+       <li id="dropdown">
+         <span>CHAPTERS</span>
+         <ul class="sub-menu" id="sub-menu">
+           <li><a href ="C:\deeksha\profit.html" style="color:black;">Profit and Loss</a></li>
+           <li><a href="C:\deeksha\mensuration.html" style="color:black;">Mensuration</a></li>
+           <li><a href ="C:\deeksha\Numbersystem.html" style="color:black;">Number System</a></li>
+         </ul>
+       </li>
+       <li><span><a href ="C:\deeksha\mathamatetian.html" style="color:white;">MATHEMATICIAN</a></span></li>
+     </ul>
+	 </div>
+	  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap" rel="stylesheet">
+        <div class="img">
+          
+         <div class="container"> 
+          <div class="header"> 
+            <div class="jotform-icon">
+          
+           </div>
+                <a href= "#" style="color:white;
+                font-weight:700;
+                font-size:15px;
+                font-family:Sans-serif;
+                text-decoration:none;
+                margin-bottom:70px;"> Login / Sign Up</a>
+         </div>
+           <div class="start">
+             <h2 class="title1"> ONLINE Learning</h2>
+             <h1 class="title2">Mathematics</h1>
+             <button class="button">Start</button>
+           </div>
+           </div>
+        </div>
+        <div class="page2">
+          <div class="container">
+            <h2 class="title3"> The easiest Maths Learning</h2>
+            <div class="icon-list">
+             <div class="three-icon">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Nuvola_Math_and_Inf.svg/121px-Nuvola_Math_and_Inf.svg.png">
+             
+                <h3 class="icon-title"> Mathematics Defination</h3>
+              <div class="icon-description">Mathematics is an area of knowledge that includes such topics as numbers formulas and related structures shapes and the spaces in which they are contained  and quantities and their changes.</div>
+              </div>
+               <div class="three-icon">
+               <img src="https://static.vecteezy.com/system/resources/previews/007/387/875/original/mathematics-color-icons-set-algebra-and-geometry-logic-discrete-elementary-maths-statistics-number-and-probability-theories-isolated-illustrations-vector.jpg" height="140px" width="140px">
+         <h3 class="icon-title">Branches of Mathematics</h3>
+              <div class="icon-description">The main branches of mathematics are algebra, number theory, geometry and arithmetic. Based on these branches, other branches have been discovered</div>
+              </div>
+        <div class="three-icon">
+          <img src="https://media.gettyimages.com/vectors/technology-background-vector-id495300389?s=612x612" height="140px" width="140px">
+          <h3 class="icon-title">Maths Properties</h3>
+              <div class="icon-description">In mathematics, the four properties of numbers are commutative, associative, distributive and identity.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page3">
+          <div class="container">
+            <div class="page3-box">
+              <img class="page3-img" src="C:\deeksha\mathametian\maths.png"></img>
+        <div class="information">
+          <div class="info-title"> Learn about different Mathematician</div>
+          <br>
+          <div class="info-all">A mathematician is someone who uses an extensive knowledge of mathematics in their work, typically to solve mathematical problems. Mathematicians are concerned with numbers, data, quantity, structure, space, models, and change.</div>
+          <button class="button learn-more"><a href ="C:\deeksha\mathamatetian.html" style="color:white;">Learn More<a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page4">
+          <div class="container">
+            <div class="memberships">
+              <div class="member">
+                <div class="mem-title">Easy Level Maths</div>
+                <h4 class="mem-price">Rs<span style="font-size:40px;">1000</span>/MO.</h4>
+                <div class="mem-features">
+                  <p>100 Monthly Submissions</p>
+                  <p>Full Explaination</p>
+                  <p>Enjoyable</p>
+                  <p>Easy to Understand</p>
+                </div>  
+                <button class="button get-free"> Get </button>
+              </div>
+         <div class="member orange">
+              <div class="mem-title">Mid-Level Maths</div>
+                <h4 class="mem-price">Rs<span style="font-size:40px;">2000</span>/MO.</h4>
+                <div class="mem-features" style="color:white;">
+                  <p>100 Monthly Submissions</p>
+                  <p>Full Explanation</p>
+                  <p>Enjoyable</p>
+                  <p>A bit less Easy to Understand</p>
+                </div>  
+                <button class="button get-free-white"> Get </button>
+            </div>
+           <div class="member">
+             <div class="mem-title">Hard Level Maths</div>
+                <h4 class="mem-price">Rs<span style="font-size:40px;">3500</span>/MO.</h4>
+                <div class="mem-features">
+                  <p>100 Monthly Submissions</p>
+                  <p>Full Explanation</p>
+                  <p>Enjoyable</p>
+                  <p>A bit Hard but can do it.</p>
+                </div>  
+                <button class="button get-free"> Get </button>
+              </div>
+        </div>
+        </div>
+        </div>
+        <div class="under">
+          <div class="container">
+            <div class="copy">Copyright © 2022</div> 
+            <div class="sos-med">
+              <a href="#" style="color:white;
+              font-weight:700;
+              font-size:15px;
+              font-family:Sans-serif;
+              text-decoration:none;
+              margin-bottom:70px;">
+                <div class="facebook"> </div>
+              </a style="color:white;
+              font-weight:700;
+              font-size:15px;
+              font-family:Sans-serif;
+              text-decoration:none;
+              margin-bottom:70px;">
+               <a href="#" style="color:white;
+               font-weight:700;
+               font-size:15px;
+               font-family:Sans-serif;
+               text-decoration:none;
+               margin-bottom:70px;">
+                <div class="twitter"> </div>
+              </a>
+               <a href="#" style="color:white;
+               font-weight:700;
+               font-size:15px;
+               font-family:Sans-serif;
+               text-decoration:none;
+               margin-bottom:70px;">
+                <div class="linkedin"> </div>
+              </a>
+            </div>
+          </div>
+        </div></body>
+</html>

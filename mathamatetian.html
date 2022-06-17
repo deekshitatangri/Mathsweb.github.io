@@ -1,0 +1,73 @@
+<html>
+<head>
+<link rel="icon" type="C:\deeksha\mathametian\logo.png" href="C:\deeksha\mathametian\logo.png">
+<style>
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  overflow: hidden;
+}
+.scope {
+  position: relative;
+  width: 18%;
+  height: 29%;
+  transform-style: preserve-3d;
+  animation: slid 30s linear infinite;
+}
+
+.scope span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
+}
+.scope span img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 2s;
+}
+.scope span:hover img {
+  transform: translateY(-50px) scale(1.7);
+}
+@keyframes slid {
+  0% {
+    transform: perspective(1000px) rotateY(0deg);
+  }
+  100% {
+    transform: perspective(1000px) rotateY(360deg);
+  }
+}
+
+</style>
+<body>
+<div class="scope">
+  <span style="--i:1;"><A href="C:\deeksha\aryabhatta.html"><img src="C:\deeksha\mathametian\Arya.jpg" width="200px" alt="not found" TEXT ="ARYABHATTA"></a></span>
+  <span style="--i:2;"><a href="C:\deeksha\carlguass.html"><img src="C:\deeksha\mathametian\carl.jpg" height="27%" width="18%" alt="not found" text="CARL GUASS"></a></span>
+  <span style="--i:3;"><a href="C:\deeksha\pythagoras.html"><img src="C:\deeksha\mathametian\pythagoras.jpg" height="27%" width="18%" alt="not found" text="PYTHAGORAS"></a></span>
+  <span style="--i:4;"><a href="C:\deeksha\isaacnewto.html"><img src="C:\deeksha\mathametian\issac.jpg" height="27%" width="18%" alt="not found"text="ISAAC NEWTON"></a></span>
+  <span style="--i:5;"><a href="C:\deeksha\satendrandra.html"><img src="C:\deeksha\mathametian\satendrabose.jpg" height="27%" width="18%" alt="not found" text="SATENDRA NATH BOSE" ></a></span>
+  <span style="--i:6;"><a href="C:\deeksha\davidhilbert.html"><img src="C:\deeksha\mathametian\David-Hilbert.jpg" alt="not found"></a></span>
+  <span style="--i:7;"><a href="C:\deeksha\euclid.html"><img src="C:\deeksha\mathametian\Euclidjpg.jpg" alt="not found"></a></span>
+  <span style="--i:8;"><a href="C:\deeksha\georgeboole.html"><img src="C:\deeksha\mathametian\George boole.jpg" alt="not found"></a></span>
+  <h3 style="color:white;">Press Images to get more Information</h3>
+  </div>
+</body>
+
+</html>
